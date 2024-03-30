@@ -1,0 +1,215 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <style>
+        * {
+            font-family: 'Arial', sans-serif;
+            box-sizing: border-box;
+            margin: 0;
+            padding: 0;
+        }
+
+        header {
+            background-image: url('https://i.ibb.co/LvvGwvs/image.jpg');
+            padding: 40px 0;
+            text-align: center;
+            color: white;
+        }
+
+        h1 {
+            font-size: 3em;
+        }
+        
+        h2 {
+            font-size: 2em;
+            padding: 16px;
+
+        }
+
+        h3 {
+            font-size: 1.5em;
+        }
+
+        p {
+            font-size: 1.2em;
+        }
+        nav {
+            background-color: #333;
+            text-align: center;
+            display: fixed;
+            position: sticky;
+            top: 0;
+        }
+
+        nav ul {
+            list-style: none;
+            padding: 20px 0;
+        }
+
+        nav ul li {
+            display: inline;
+            padding: 0 16px;
+        }
+       nav ul li a {
+            text-decoration: none;
+            color: white;
+            font-size: 1.3em;
+
+        }
+
+        .horario {
+            padding-top: 35px;
+            text-align: center;
+        }
+
+        main {
+            padding: 20px;
+            text-align: center;
+        }
+
+        .about {
+            text-align: center;
+        }
+        .about p {
+            font-size: 1.2em;
+            margin: 0 20%;
+        }
+        
+
+        .comidas {
+            display: flex;
+            justify-content: center;
+            flex-wrap: wrap;
+            margin: 0 0 100px 0;
+        }
+
+        article {
+            margin: 0 15px;
+            padding: 10px;
+            border: 1px solid #000;
+            border-radius: 7px;
+            width: 300px;
+            text-align: center;
+        }
+
+        article h3 {
+            margin: 8px;
+        }
+
+        article img {
+            width: 250px;
+            border: 2px solid black;
+            border-radius: 10px;
+        }
+
+        input[type="number"],
+        input[type="radio"] {
+            margin: 10px;
+            padding: 5px;
+            border-radius: 5px;
+            border: 1px solid #333;
+        }
+
+        input[type="submit"] {
+            padding: 10px 20px;
+            background-color: #333;
+            color: white;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+        }
+
+        label {
+            margin: 10px;
+        }
+
+        footer {
+            text-align: center;
+            padding: 20px 0 5px 0;
+            background-color: #333;
+            color: white;
+        }
+
+        .nes-icon {
+            vertical-align: middle;
+        }
+        
+    </style>
+    <link href="https://unpkg.com/nes.css@latest/css/nes.min.css" rel="stylesheet" />
+    <title>La Cosa nostra</title>
+</head>
+
+<body>
+    <header>
+        <h1>La Cosa nostra</h1>
+    </header>
+    <nav>
+        <ul>
+            <li><a href="#menu">Menú</a></li>
+            <li><a href="#order-form">Realizar Pedido</a></li>
+        </ul>
+    </nav>
+    <main>
+        <section id="menu">
+            <section class="about">
+                <h2>Restaurante Italiano</h2>
+                <p>El restaurante italiano es un lugar donde puedes disfrutar de la mejor comida italiana en la ciudad.
+                    Contamos con una amplia variedad de platos, desde pastas hasta pizzas y postres. Ven a visitarnos y
+                    disfruta de la mejor comida italiana.</p>
+            </section>
+            <section class="horario">
+                <h3>Horario de atención</h3>
+                <p>Lunes a viernes: 12:00 - 22:00</p>
+                <p>Sábados y domingos: 11:00 - 23:00</p>
+            </section>
+            <h2>Menu</h2>
+            <div class="comidas">
+                
+                <article>
+                    <img src="https://media.istockphoto.com/id/686957124/photo/pizza-margherita.jpg?s=612x612&w=0&k=20&c=STQALvMIjcgXPIvpXXUXItAl05QtbmEUQ_PfwSato48="
+                        alt="Pizza Margherita">
+                    <h3>Pizza Margherita</h3>
+                    <p>Masa de pizza, salsa de tomate, mozzarella, albahaca. Precio: <em>$12.99</em></p>
+                </article>
+                <br>
+                <article>
+                    <img src="https://thumbs.dreamstime.com/b/tomato-ground-beef-lasagne-cheese-layered-sheets-traditional-italian-pasta-served-white-plate-dark-64979694.jpg"
+                        alt="Lasagna">
+                    <h3>Lasagna</h3>
+                    <p>Carne de res, salsa bechamel, salsa de tomate, queso mozzarella, pasta. Precio: <em>$15.99</em>
+                    </p>
+                </article>
+                <br>
+                <article>
+                    <img src="https://static.oprah.com/2017/04/201704-orig-spaghetti-carbonara.jpg"
+                        alt="Spaghetti Carbonara">
+                    <h3>Spaghetti Carbonara</h3>
+                    <p>Spaghetti, huevo, queso parmesano, panceta, pimienta negra. Precio: <em>$14.99</em></p>
+                </article>
+        </section>
+        </div>
+        <section id="order-form">
+            <h2>Pide tu orden</h2>
+            <form class="order-form">
+                <label for="pizza">Pizza Margherita: </label>
+                <input type="number" id="pizza" name="pizza" min="0" value="0"><br>
+                <label for="lasagna">Lasagna: </label>
+                <input type="number" id="lasagna" name="lasagna" min="0" value="0"><br>
+                <label for="spaghetti">Spaghetti Carbonara: </label>
+                <input type="number" id="spaghetti" name="spaghetti" min="0" value="0"><br><br>
+                <label>Escoge tu bebida:</label><br>
+                <input type="radio" id="bebida1" name="bebida" value="Coca Cola">
+                <label for="b">Coca Cola</label>
+                <input type="radio" id="bebida2" name="bebida" value="Sprite">
+                <label for="bebida2">Sprite</label><br><br>
+                <input type="submit" value="Submit">
+            </form>
+        </section>
+    </main>
+
+    <footer>
+        <p>Made with <i class="nes-icon is-small heart"></i> by ktxjm</p>
+    </footer>
+</body>
+
+</html>
