@@ -133,6 +133,12 @@
         .nes-icon {
             vertical-align: middle;
         }
+
+        textarea {
+            margin: 10px;
+            border-radius: 5px;
+            border: 1px solid #333;
+        }
         
     </style>
     <link href="https://unpkg.com/nes.css@latest/css/nes.min.css" rel="stylesheet" />
@@ -202,8 +208,12 @@
                 <label for="b">Coca Cola</label>
                 <input type="radio" id="bebida2" name="bebida" value="Sprite">
                 <label for="bebida2">Sprite</label><br><br>
+                <h3>Pidido especial:</h3>
+                <textarea rows="10" cols="50" placeholder="Ingresa tu orden aquí..."></textarea>
+                <br>
                 <input type="submit" value="Submit">
             </form>
+
         </section>
     </main>
 
